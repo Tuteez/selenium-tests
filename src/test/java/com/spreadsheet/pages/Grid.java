@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 /** The grid of cells for the active sheet. Cells are addressed like "A1" or "B3". */
 public class Grid extends BasePage {
 
-    private final By nameBox = By.cssSelector("[data-testid='name-box']");
+    private final By nameBox = By.cssSelector("[aria-label='Selected cell']");
     private final By cellEditor = By.cssSelector("input.cell-editor");
 
     public Grid(WebDriver driver) {
